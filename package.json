@@ -1,0 +1,29 @@
+{
+  "name": "@time-loop/spawn-burst",
+  "description": "Spawns a shell command with bursts protection and caching.",
+  "version": "2.10.291",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc.sh",
+    "dev": "tight-loop.sh tsc.sh --watch",
+    "lint": "lint.sh",
+    "test": "test.sh",
+    "prepack": "yarn build"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.4.3"
+  },
+  "devDependencies": {
+    "jest-worker": "^27.0.6"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/time-loop/github-packages"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
